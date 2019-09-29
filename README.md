@@ -41,4 +41,4 @@
 3)Низкое качество классификации.
 
 ## Алгоритм kNN
-	$y''_1(t) = F''_1(x''_1(t), \dots,x''_{n2}(t), q''_1(t-1), \dots, q''_{r2}(t-1),$
+<img src="https://latex.codecogs.com/gif.latex?O_t=\text { 	$y''_1(t) = F''_1(x''_1(t), \dots,x''_{n2}(t), q''_1(t-1), \dots, q''_{r2}(t-1),$ } t " /> 
