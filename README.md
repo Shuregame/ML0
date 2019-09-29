@@ -59,6 +59,6 @@
 Возникает справедливый вопрос: как определить оптимально количество k? Ведь если взять слишком мало, или слишком много может оказаться, что погрешность выростет. 
 
 ## Оптимизация числа соседей k:
-функционал скользящего контроля leave-one-out
+Функционал скользящего контроля leave-one-out
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=LOO$(k,X^l)$&space;=&space;\sum_{i=1}^{l}$[a(x_i;X^l&space;/&space;\left&space;\{&space;x_i&space;\right&space;\},&space;\neq&space;y]&space;\rightarrow&space;$\min_{k}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?LOO$(k,X^l)$&space;=&space;\sum_{i=1}^{l}$[a(x_i;X^l&space;/&space;\left&space;\{&space;x_i&space;\right&space;\},&space;\neq&space;y]&space;\rightarrow&space;$\min_{k}" title="LOO$(k,X^l)$ = \sum_{i=1}^{l}$[a(x_i;X^l / \left \{ x_i \right \}, \neq y] \rightarrow $\min_{k}" /></a>
