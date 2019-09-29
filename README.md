@@ -1,7 +1,7 @@
 # ML0
 ## Метрические алгоритмы классификации
 
-##Гипотеза компактности: 
+## Гипотеза компактности: 
 Схожие объекты, как правило, лежат в одном классе.
 
 
@@ -47,6 +47,12 @@
 ## Алгоритм kNN
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$w(i,u)&space;=&space;\left&space;[&space;i&space;\leqslant&space;k&space;\right&space;]$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$w(i,u)&space;=&space;\left&space;[&space;i&space;\leqslant&space;k&space;\right&space;]$" title="$w(i,u) = \left [ i \leqslant k \right ]$" /></a>
+
+Преимущества:
+
+-менее чувствителен к шумуж;
+
+-появился параметр k.
 
 
 
