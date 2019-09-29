@@ -1,7 +1,7 @@
 # ML0
 ## Метрические алгоритмы классификации
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=$a(u;X^l)&space;=&space;\arg&space;\max$&space;\sum_{l}^{i=1}[$y_u^{(i)}=y]w(i,u)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$a(u;X^l)&space;=&space;\arg&space;\max$&space;\sum_{l}^{i=1}[$y_u^{(i)}=y]w(i,u)" title="$a(u;X^l) = \arg \max$ \sum_{l}^{i=1}[$y_u^{(i)}=y]w(i,u)" /></a>
+## <a href="https://www.codecogs.com/eqnedit.php?latex=$a(u;X^l)&space;=&space;\arg&space;\max$&space;\sum_{l}^{i=1}[$y_u^{(i)}=y]w(i,u)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$a(u;X^l)&space;=&space;\arg&space;\max$&space;\sum_{l}^{i=1}[$y_u^{(i)}=y]w(i,u)" title="$a(u;X^l) = \arg \max$ \sum_{l}^{i=1}[$y_u^{(i)}=y]w(i,u)" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$w(i,u)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$w(i,u)$" title="$w(i,u)$" /></a> - вес (степень важности) i-го соседа объекта u, неотрицателен, не возрастает по i.
 ## Гипотеза компактности: 
