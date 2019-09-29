@@ -3,6 +3,8 @@
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$a(u;X^l)&space;=&space;\arg&space;\max$&space;\sum_{l}^{i=1}[$y_u^{(i)}=y]w(i,u)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$a(u;X^l)&space;=&space;\arg&space;\max$&space;\sum_{l}^{i=1}[$y_u^{(i)}=y]w(i,u)" title="$a(u;X^l) = \arg \max$ \sum_{l}^{i=1}[$y_u^{(i)}=y]w(i,u)" /></a>
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=$w(i,u)$&space;-&space;вес&space;(степень&space;важности)&space;i-го&space;соседа&space;объекта&space;u,&space;неотрицателен,&space;не&space;возрастает&space;по&space;i.&space;\par&space;\Gamma&space;_y(u)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$w(i,u)$&space;-&space;вес&space;(степень&space;важности)&space;i-го&space;соседа&space;объекта&space;u,&space;неотрицателен,&space;не&space;возрастает&space;по&space;i.&space;\par&space;\Gamma&space;_y(u)" title="$w(i,u)$ - вес (степень важности) i-го соседа объекта u, неотрицателен, не возрастает по i. \par \Gamma _y(u)" /></a>
+
 ## Гипотеза компактности: 
 Схожие объекты, как правило, лежат в одном классе.
 
