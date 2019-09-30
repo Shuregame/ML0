@@ -51,6 +51,21 @@
 3)Низкое качество классификации.
 
 ## Алгоритм kNN
+
+Алгоритм kNN относит классифицируемый объект к классу в зависимости от k-ближайших соседей (обучающих объектов). 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=$w(i,u)&space;=&space;\left&space;[&space;i&space;\leqslant&space;k&space;\right&space;]$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$w(i,u)&space;=&space;\left&space;[&space;i&space;\leqslant&space;k&space;\right&space;]$" title="$w(i,u) = \left [ i \leqslant k \right ]$" /></a>
+
+Преимущества:
+
+-менее чувствителен к шумуж;
+
+-появился параметр k.
+
+Возникает справедливый вопрос: как определить оптимально количество k? Ведь если взять слишком мало, или слишком много может оказаться, что погрешность выростет. 
+
+## Реализация
+
 ```
 colors <- c("setosa" = "red", "versicolor" = "green3",
 "virginica" = "blue")
@@ -90,21 +105,6 @@ xl <- iris[, 3:5]
 class <- kNN(xl, z, k=6) 
 points(z[1], z[2], pch = 22, bg = colors[class], asp = 1) 
 ```
-
-Алгоритм kNN относит классифицируемый объект к классу в зависимости от k-ближайших соседей (обучающих объектов). 
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=$w(i,u)&space;=&space;\left&space;[&space;i&space;\leqslant&space;k&space;\right&space;]$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$w(i,u)&space;=&space;\left&space;[&space;i&space;\leqslant&space;k&space;\right&space;]$" title="$w(i,u) = \left [ i \leqslant k \right ]$" /></a>
-
-Преимущества:
-
--менее чувствителен к шумуж;
-
--появился параметр k.
-
-Возникает справедливый вопрос: как определить оптимально количество k? Ведь если взять слишком мало, или слишком много может оказаться, что погрешность выростет. 
-
-## Реализация
-см. файл "kNN"
 
 ## Оптимизация числа соседей k:
 Функционал скользящего контроля leave-one-out
