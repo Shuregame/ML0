@@ -109,9 +109,9 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 ## Сравнение KNN и KWNN 
 Покажем, на графике превосходство алготима KWNN над KNN. 
-
+```
 ![Image alt](https://github.com/Shuregame/ML0/blob/master/687474703a2f2f7777772e70696373686172652e72752f75706c6f6164732f3138313031382f6c37694175336444735a2e6a7067.jpg)
-
+```
 
 ## Оптимизация числа соседей k (LOO):
 Функционал скользящего контроля leave-one-out
