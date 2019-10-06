@@ -106,7 +106,10 @@ class <- kNN(xl, z, k=6)
 points(z[1], z[2], pch = 22, bg = colors[class], asp = 1) 
 ```
 
-## Оптимизация числа соседей k:
+## Оптимизация числа соседей k (LOO):
 Функционал скользящего контроля leave-one-out
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=LOO$(k,X^l)$&space;=&space;\sum_{i=1}^{l}$[a(x_i;X^l&space;/&space;\left&space;\{&space;x_i&space;\right&space;\},&space;\neq&space;y]&space;\rightarrow&space;$\min_{k}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?LOO$(k,X^l)$&space;=&space;\sum_{i=1}^{l}$[a(x_i;X^l&space;/&space;\left&space;\{&space;x_i&space;\right&space;\},&space;\neq&space;y]&space;\rightarrow&space;$\min_{k}" title="LOO$(k,X^l)$ = \sum_{i=1}^{l}$[a(x_i;X^l / \left \{ x_i \right \}, \neq y] \rightarrow $\min_{k}" /></a>
+
+Алгоритм LOO выкидывает из выборки по одному обучающему элементу и смотрит правильный ли был ответ для i-го объекта. Если ответ был правильный добавляем 0, если неправилдьный, то 1. Проделывая такую операцию смотрим частоту ошибок при 1,2,3,..,k-1,k,k+1,...,n элементов. Это делается для того, чтобы посмотреть какое количество ближайших соседей нам нужно учитывать, чтобы отнести объект 'u' к тому или инному классу. 
+
