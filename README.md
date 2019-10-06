@@ -105,9 +105,11 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 ## KWNN
 
-Алгоритм KWNN, в отличии от KNN отличается тем, что он учитывает не только ранг расстоянния <a href="https://www.codecogs.com/eqnedit.php?latex=(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" title="(\rho (u,X_u^{(1)})\leqslant \rho (u,X_u^{(2)}) \leqslant \dots \leqslant \rho (u,X_u^{(l)}))" /></a> по убываюнию в качестве веса w(i,u), но и среднее расстоняие от k-ближайших объектов. Мы будет относить классифицируемый объект к тому классу, у которого среднее расстоние будет меньше. Таким образом качесвто классификации становиться лучше.
+Алгоритм KWNN, в отличии от KNN, учитывает не только ранг расстоянния <a href="https://www.codecogs.com/eqnedit.php?latex=(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" title="(\rho (u,X_u^{(1)})\leqslant \rho (u,X_u^{(2)}) \leqslant \dots \leqslant \rho (u,X_u^{(l)}))" /></a> по убываюнию в качестве веса w(i,u), но и среднее расстоняие от k-ближайших объектов. Мы будет относить классифицируемый объект к тому классу, у которого среднее расстоние будет меньше. Таким образом качество классификации становиться лучше.
 
 ## Сравнение KNN и KWNN 
+Покажем, на графике превосходство алготима KWNN над KNN. 
+
 
 ## Оптимизация числа соседей k (LOO):
 Функционал скользящего контроля leave-one-out
