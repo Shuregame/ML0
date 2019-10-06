@@ -73,7 +73,7 @@ plot(iris[, 3:4], pch = 21, bg = colors[iris$Species],
 col = colors[iris$Species])
 euclideanDistance <- function(u, v)
   {
-sqrt(sum((u - v)^2))
+    sqrt(sum((u - v)^2))
   }
 sortObjectsByDist <- function(xl, z, metricFunction = euclideanDistance)
   {
