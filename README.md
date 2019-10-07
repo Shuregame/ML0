@@ -67,11 +67,10 @@
 ## Реализация
 
 ```R
-colors <- c("setosa" = "red", "versicolor" = "green3",
-"virginica" = "blue")
-plot(iris[, 3:4], pch = 21, bg = colors[iris$Species],
-col = colors[iris$Species])
-euclideanDistance <- function(u, v)
+colors <- c("setosa" = "red", "versicolor" = "green3", "virginica" = "blue")
+  plot(iris[, 3:4], pch = 21, bg = colors[iris$Species],
+    col = colors[iris$Species])
+      euclideanDistance <- function(u, v)
   {
     sqrt(sum((u - v)^2))
   }
@@ -104,6 +103,7 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 ```
 
 ## KWNN
+<a href="https://www.codecogs.com/eqnedit.php?latex=w(i,u)=[i\leqslant&space;k,&space;w(i)];&space;\par&space;U(u;X^l,k)&space;=&space;arg&space;max&space;\sum\limits^k_{i=1}&space;[y_n^{(i)}=y]w(i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w(i,u)=[i\leqslant&space;k,&space;w(i)];&space;\par&space;U(u;X^l,k)&space;=&space;arg&space;max&space;\sum\limits^k_{i=1}&space;[y_n^{(i)}=y]w(i)" title="w(i,u)=[i\leqslant k, w(i)]; \par U(u;X^l,k) = arg max \sum\limits^k_{i=1} [y_n^{(i)}=y]w(i)" /></a>
 
 Алгоритм KWNN, в отличии от KNN, учитывает не только ранг расстоянния <a href="https://www.codecogs.com/eqnedit.php?latex=(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" title="(\rho (u,X_u^{(1)})\leqslant \rho (u,X_u^{(2)}) \leqslant \dots \leqslant \rho (u,X_u^{(l)}))" /></a> по убываюнию в качестве веса w(i,u), но и среднее расстоняие от k-ближайших объектов. Мы будет относить классифицируемый объект к тому классу, у которого среднее расстоние будет меньше. Таким образом качество классификации становиться лучше.
 
