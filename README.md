@@ -108,7 +108,7 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 Алгоритм KWNN, в отличии от KNN, учитывает не только ранг расстоянния <a href="https://www.codecogs.com/eqnedit.php?latex=(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" title="(\rho (u,X_u^{(1)})\leqslant \rho (u,X_u^{(2)}) \leqslant \dots \leqslant \rho (u,X_u^{(l)}))" /></a> по убываюнию в качестве веса w(i,u), но и среднее расстоняие от k-ближайших объектов. Мы будет относить классифицируемый объект к тому классу, у которого среднее расстоние будет меньше. Таким образом качество классификации становиться лучше.
 
 ## Сравнение KNN и KWNN 
-Покажем, на графике превосходство алготима KWNN над KNN. 
+Покажем, на графике превосходство алготима KWNN над KNN. На картинке хорошо видно, что в слуячае с KNN алгоритм определил оъект ошибочно отнеся его к синиму, так как их количество (рангов) больше, а расстояние мы не учитытываем, в свою очередь KWNN учел расстояние и определил классифицируемый объект верно.
 
 ![Image alt](https://github.com/Shuregame/ML0/blob/master/687474703a2f2f7777772e70696373686172652e72752f75706c6f6164732f3138313031382f6c37694175336444735a2e6a7067.jpg)
 
