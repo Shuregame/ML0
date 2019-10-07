@@ -66,7 +66,7 @@
 
 ## Реализация
 
-```
+```R
 colors <- c("setosa" = "red", "versicolor" = "green3",
 "virginica" = "blue")
 plot(iris[, 3:4], pch = 21, bg = colors[iris$Species],
