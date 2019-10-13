@@ -136,7 +136,9 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 ## Отступ
 
-Случается так, что обучающая выборка избыточна. К примеру у нас есть 1000 объектов, но нам будет достаточно и 50 для построения алгоритма. Вопрос в том какие 50 нам выбрать. Для этого вводим пониятие отступа, которое подразделяет объекты обучающей выборки на:
+Случается так, что обучающая выборка избыточна. К примеру у нас есть 1000 объектов, но нам будет достаточно и 50 для построения алгоритма. Вопрос в том какие 50 нам выбрать. Для этого вводим пониятие отступа, которое подразделяет объекты выборки по уровню точности оценки классифицируемого объекта. Для этого введем формулу отступа:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;M(x_i)=\Gamma_{yi}(x_i)-\max_{y\epsilon&space;Y&space;\setminus&space;y_{i}}\Gamma&space;_y(x_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;M(x_i)=\Gamma_{yi}(x_i)-\max_{y\epsilon&space;Y&space;\setminus&space;y_{i}}\Gamma&space;_y(x_i)" title="\large M(x_i)=\Gamma_{yi}(x_i)-\max_{y\epsilon Y \setminus y_{i}}\Gamma _y(x_i)" /></a>
 
 ![Image alt](https://github.com/Shuregame/ML0/blob/master/Etaloni.png)
 
