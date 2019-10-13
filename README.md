@@ -134,6 +134,10 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" title="a(u;X^l)=\arg \max_{y\epsilon Y} \sum_{i=1}^l [y_i=y]\gamma_i K(\frac{p(u,x_i)}{h_i})" /></a>
 
+Если объект попал сразу в два окна, смотрим на потенциалы этих окон и расстояние до объектов обучающей выборки. Если мы посмотрим на график ниже, то увидим, что расстоние от классифицируемого объекта до объектов классов примерно равны, но потенциалы значительно отличаются. Соответственно относим классифицируемый объект к классу "крестик"
+
+![Image alt](https://github.com/Shuregame/ML0/blob/master/Metog_Potencialov.jpg)
+
 ## Отступ
 
 Случается так, что обучающая выборка избыточна. К примеру у нас есть 1000 объектов, но нам будет достаточно и 50 для построения алгоритма. Вопрос в том какие 50 нам выбрать. Для этого вводим пониятие отступа, которое подразделяет объекты выборки по уровню точности оценки классифицируемого объекта. Для этого введем формулу отступа:
