@@ -140,6 +140,8 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;M(x_i)=\Gamma_{yi}(x_i)-\max_{y\epsilon&space;Y&space;\setminus&space;y_{i}}\Gamma&space;_y(x_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;M(x_i)=\Gamma_{yi}(x_i)-\max_{y\epsilon&space;Y&space;\setminus&space;y_{i}}\Gamma&space;_y(x_i)" title="\large M(x_i)=\Gamma_{yi}(x_i)-\max_{y\epsilon Y \setminus y_{i}}\Gamma _y(x_i)" /></a>
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\Gamma_y(u)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Gamma_y(u)" title="\Gamma_y(u)" /></a> - оценка близости объекта 'u' к классу 'y'(оценка степенм принадлежности).
+
 ![Image alt](https://github.com/Shuregame/ML0/blob/master/Etaloni.png)
 
 -Эталонные
