@@ -165,8 +165,12 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 # Преимущества отбора эталонов
 -сокращается число хранимых объектов;
+
 -сокращается время классификации;
+
 -объекты распределяются по величине отступов;
+
 # Недостатки алгоритма 
 -необходимость задавать параметр <a href="https://www.codecogs.com/eqnedit.php?latex=\delta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta" title="\delta" /></a> ;
+
 -относительно низкая эффективность 
