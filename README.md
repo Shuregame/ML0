@@ -135,7 +135,7 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" title="a(u;X^l)=\arg \max_{y\epsilon Y} \sum_{i=1}^l [y_i=y]\gamma_i K(\frac{p(u,x_i)}{h_i})" /></a>
 
-<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Potencial.jpg" align="left" height="500" width="720" ></a>
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Potencial.jpg" height="500" width="720" ></a>
 
 ## Отступ
 
