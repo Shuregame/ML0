@@ -133,10 +133,10 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 Так как функция расстояния - функция симметричная, можно рассматривать парзеновское окно с точки зрения объектов обучающей выборки.
 Ширина окна будет соответсвенно привязывается не к классифицируемому объекту, а к объектам обучающей выборки. Зададим окрестности "h" некоторый потенциал, и будем говорить, что все элементы попадающие в окрестность данного объекта обучающей выборки будут принимать его класс. Если объект попал сразу в два окна, смотрим на потенциалы этих окон и расстояния до объектов обучающей выборки. Если мы посмотрим на график ниже, то увидим, что расстония от классифицируемого объекта до объектов классов примерно равны, но потенциалы значительно отличаются. Соответственно относим классифицируемый объект к классу "крестик".
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" title="a(u;X^l)=\arg \max_{y\epsilon Y} \sum_{i=1}^l [y_i=y]\gamma_i K(\frac{p(u,x_i)}{h_i})" /></a>
+
 
 ![Image alt](https://github.com/Shuregame/ML0/blob/master/Potencial.jpg)
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" title="a(u;X^l)=\arg \max_{y\epsilon Y} \sum_{i=1}^l [y_i=y]\gamma_i K(\frac{p(u,x_i)}{h_i})" /></a>
 
 ## Отступ
 
