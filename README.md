@@ -200,6 +200,7 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
   
 <a href="https://www.codecogs.com/eqnedit.php?latex=x_i&space;:=&space;\arg&space;\min_{x\epsilon&space;E}&space;M(x,\Omega);&space;\&space;\Omega&space;:=\Omega\&space;\cup&space;\&space;\{x_i\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_i&space;:=&space;\arg&space;\min_{x\epsilon&space;E}&space;M(x,\Omega);&space;\&space;\Omega&space;:=\Omega\&space;\cup&space;\&space;\{x_i\}" title="x_i := \arg \min_{x\epsilon E} M(x,\Omega); \ \Omega :=\Omega\ \cup \ \{x_i\}" /></a>
 
+Результатом работы алгоритма **STOLP** является разбиение обучающих объектов на три категории: шумовые, эталонные и неинформативные. 
 
 ## Преимущества отбора эталонов
 -сокращается число хранимых объектов;
