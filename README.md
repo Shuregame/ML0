@@ -184,9 +184,13 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 4: Инициализация: взять по одному эталону от каждого класса:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\Omega&space;:=&space;\{\arg\max_{x_i\epsilon&space;X^l_y}&space;M(x_i,&space;X^l)&space;|&space;\&space;y&space;\&space;\epsilon&space;\&space;Y\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega&space;:=&space;\{\arg\max_{x_i\epsilon&space;X^l_y}&space;M(x_i,&space;X^l)&space;|&space;\&space;y&space;\&space;\epsilon&space;\&space;Y\}" title="\Omega := \{\arg\max_{x_i\epsilon X^l_y} M(x_i, X^l) | \ y \ \epsilon \ Y\}" /></a>;
+<a href="https://www.codecogs.com/eqnedit.php?latex=\Omega&space;:=&space;\{\arg\max_{x_i\epsilon&space;X^l_y}&space;M(x_i,&space;X^l)&space;|&space;\&space;y&space;\&space;\epsilon&space;\&space;Y\};" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega&space;:=&space;\{\arg\max_{x_i\epsilon&space;X^l_y}&space;M(x_i,&space;X^l)&space;|&space;\&space;y&space;\&space;\epsilon&space;\&space;Y\};" title="\Omega := \{\arg\max_{x_i\epsilon X^l_y} M(x_i, X^l) | \ y \ \epsilon \ Y\};" /></a>
 
 5: пока <a href="https://www.codecogs.com/eqnedit.php?latex=\Omega&space;\neq&space;X^l;" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega&space;\neq&space;X^l;" title="\Omega \neq X^l;" /></a>
+
+6:Выделить множество объектов, на которых алгоритм <a href="https://www.codecogs.com/eqnedit.php?latex=a(u;&space;\Omega)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;&space;\Omega)" title="a(u; \Omega)" /></a> ошибается:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=E&space;:=&space;\{x_i&space;\epsilon&space;X^l&space;\&space;\backslash&space;\Omega&space;:&space;M(x_i,&space;\Omega&space;<&space;0)&space;\};" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E&space;:=&space;\{x_i&space;\epsilon&space;X^l&space;\&space;\backslash&space;\Omega&space;:&space;M(x_i,&space;\Omega&space;<&space;0)&space;\};" title="E := \{x_i \epsilon X^l \ \backslash \Omega : M(x_i, \Omega < 0) \};" /></a>
 
 ## Преимущества отбора эталонов
 -сокращается число хранимых объектов;
