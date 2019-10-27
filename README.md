@@ -129,8 +129,15 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 Для того, чтобы сделать парзеновское окно с переменной шириной(пар. h), мы можем, например, поместить нашу 1 є K(r) на k+1 соседа, тогда для k+1 соседа вес будет нулевой, но для k-го будет лежать точно где-то в промежутке [0,1].
 <a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Parsen_dlya_gip.png" height="500" width="760" ></a>
 
+Для наглядности покажем два случая парзеновского окна:
 
+1)**С переменной шириной 
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=a(u;X^l,h)&space;=&space;\arg&space;\max_{y&space;\epsilon&space;Y}&space;\sum_i:&space;y_n^{(i)}&space;=&space;K(\frac{\rho&space;(u,&space;x_n^{(i)})}{h})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;X^l,h)&space;=&space;\arg&space;\max_{y&space;\epsilon&space;Y}&space;\sum_i:&space;y_n^{(i)}&space;=&space;K(\frac{\rho&space;(u,&space;x_n^{(i)})}{h})" title="a(u;X^l,h) = \arg \max_{y \epsilon Y} \sum_i: y_n^{(i)} = K(\frac{\rho (u, x_n^{(i)})}{h})" /></a>
+
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Parsen_h.png" height="500" width="760" ></a>
+
+Сразу видно, что в случае с классификацией красной точки плотность распределения большая, а в случае с синим и вовсе не попала ни одна точка в окно ширины h.
 ## Метод потенциальных функций
 
 Так как функция расстояния - функция симметричная, можно рассматривать парзеновское окно с точки зрения объектов обучающей выборки.
@@ -139,13 +146,6 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 <a href="https://www.codecogs.com/eqnedit.php?latex=a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;X^l)=\arg&space;\max_{y\epsilon&space;Y}&space;\sum_{i=1}^l&space;[y_i=y]\gamma_i&space;K(\frac{p(u,x_i)}{h_i})" title="a(u;X^l)=\arg \max_{y\epsilon Y} \sum_{i=1}^l [y_i=y]\gamma_i K(\frac{p(u,x_i)}{h_i})" /></a>
 
 <a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Potencial.jpg" height="500" width="760" ></a>
-
-
-Для наглядности покажем два случая парзеновского окна:
-
-1)**С переменной шириной 
-
-a(u;X^l,h) = \arg \max_{y \epsilon Y} \sum_i: y_n^{(i)} = K(\frac{\rho (u, x_n^{(i)})}{h})
 
 ## Отступ
 
