@@ -106,6 +106,24 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 <a href="https://www.codecogs.com/eqnedit.php?latex=w(i,u)=[i\leqslant&space;k,&space;w(i)];&space;\par&space;U(u;X^l,k)&space;=&space;arg&space;max&space;\sum\limits^k_{i=1}&space;[y_n^{(i)}=y]w(i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w(i,u)=[i\leqslant&space;k,&space;w(i)];&space;\par&space;U(u;X^l,k)&space;=&space;arg&space;max&space;\sum\limits^k_{i=1}&space;[y_n^{(i)}=y]w(i)" title="w(i,u)=[i\leqslant k, w(i)]; \par U(u;X^l,k) = arg max \sum\limits^k_{i=1} [y_n^{(i)}=y]w(i)" /></a>
 
 Алгоритм KWNN, в отличии от KNN, учитывает не только ранг расстоянния <a href="https://www.codecogs.com/eqnedit.php?latex=(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\rho&space;(u,X_u^{(1)})\leqslant&space;\rho&space;(u,X_u^{(2)})&space;\leqslant&space;\dots&space;\leqslant&space;\rho&space;(u,X_u^{(l)}))" title="(\rho (u,X_u^{(1)})\leqslant \rho (u,X_u^{(2)}) \leqslant \dots \leqslant \rho (u,X_u^{(l)}))" /></a> по убываюнию в качестве веса w(i,u), но и среднее расстоняие от k-ближайших объектов. Мы будет относить классифицируемый объект к тому классу, у которого среднее расстоние будет меньше. Таким образом качество классификации становиться лучше.
+## Реализация
+
+```R
+kwNN <- function(xl, z, k,q)
+{
+	m <- c("setosa" = 0, "versicolor" = 0, "virginica" = 0)
+	xl <- sortObjectsByDist(xl, z)
+	n <- dim(xl)[2] - 1
+	classes <- xl[1:k, n + 1]
+	for(i in 1:k)
+	{
+		w<-q ^ i
+		m[classes[i]]<-m[classes[i]]+w
+	}
+	class <- names(which.max(m))
+	return (class)
+}
+```
 
 ## Сравнение KNN и KWNN 
 Покажем, на графике превосходство алготима KWNN над KNN. На картинке хорошо видно, что в слуячае с KNN алгоритм определил оъект ошибочно отнеся его к синиму, так как их количество (рангов) больше, а расстояние мы не учитытываем, в свою очередь KWNN учел расстояние и определил классифицируемый объект верно.
