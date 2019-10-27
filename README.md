@@ -186,6 +186,7 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\Omega&space;:=&space;\{\arg\max_{x_i\epsilon&space;X^l_y}&space;M(x_i,&space;X^l)&space;|&space;\&space;y&space;\&space;\epsilon&space;\&space;Y\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega&space;:=&space;\{\arg\max_{x_i\epsilon&space;X^l_y}&space;M(x_i,&space;X^l)&space;|&space;\&space;y&space;\&space;\epsilon&space;\&space;Y\}" title="\Omega := \{\arg\max_{x_i\epsilon X^l_y} M(x_i, X^l) | \ y \ \epsilon \ Y\}" /></a>;
 
+5: пока <a href="https://www.codecogs.com/eqnedit.php?latex=\Omega&space;\neq&space;X^l;" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega&space;\neq&space;X^l;" title="\Omega \neq X^l;" /></a>
 
 ## Преимущества отбора эталонов
 -сокращается число хранимых объектов;
