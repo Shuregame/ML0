@@ -5,7 +5,7 @@
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$w(i,u)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$w(i,u)$" title="$w(i,u)$" /></a> - вес (степень важности) i-го соседа объекта u, неотрицателен, не возрастает по i.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\Gamma_y(u)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Gamma_y(u)" title="\Gamma_y(u)" /></a> - оценка близости объекта 'u' к классу 'y'(оценка степенм принадлежности).
+<a href="https://www.codecogs.com/eqnedit.php?latex=\Gamma_y(u)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Gamma_y(u)" title="\Gamma_y(u)" /></a> - оценка близости объекта 'u' к классу 'y'(оценка степени принадлежности).
 
 ## Гипотеза компактности: 
 Схожие объекты, как правило, лежат в одном классе.
