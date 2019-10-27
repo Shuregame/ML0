@@ -165,6 +165,7 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 Алгоритм STOLP заключается в том, чтобы исключить выбросы, и возможно пограничные объекты, найти по одному эталону в каждом классе, и добавлять эталоны, пока есть отрицательные отступы. 
 
 Вход:
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=X_l" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_l" title="X_l" /></a> — обучающая выборка;
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\delta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta" title="\delta" /></a> — порог фильтрации выбросов;
@@ -173,10 +174,14 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 Выход:
 
-Множество опорных объектов Ω ⊆ Xℓ;
+Множество опорных объектов 
+
 1: для всех <a href="https://www.codecogs.com/eqnedit.php?latex=x_i&space;\epsilon&space;X^l" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_i&space;\epsilon&space;X^l" title="x_i \epsilon X^l" /></a> проверить, является ли <a href="https://www.codecogs.com/eqnedit.php?latex=x_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_i" title="x_i" /></a> выбросом:
+
 2: если <a href="https://www.codecogs.com/eqnedit.php?latex=M(x_i,&space;x_l)&space;<&space;\delta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?M(x_i,&space;x_l)&space;<&space;\delta" title="M(x_i, x_l) < \delta" /></a>
+
 3: <a href="https://www.codecogs.com/eqnedit.php?latex=X^{l-1}&space;:=&space;X^l\&space;\backslash&space;\&space;\{x_i\};&space;l&space;:=&space;l-1;" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X^{l-1}&space;:=&space;X^l\&space;\backslash&space;\&space;\{x_i\};&space;l&space;:=&space;l-1;" title="X^{l-1} := X^l\ \backslash \ \{x_i\}; l := l-1;" /></a>
+
 4: Инициализация: взять по одному эталону от каждого класса:
 <a href="https://www.codecogs.com/eqnedit.php?latex=\Omega&space;:=&space;\{\arg\max_{x_i\epsilon&space;X^l_y}&space;M(x_i,&space;X^l)&space;|&space;\&space;y&space;\&space;\epsilon&space;\&space;Y\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega&space;:=&space;\{\arg\max_{x_i\epsilon&space;X^l_y}&space;M(x_i,&space;X^l)&space;|&space;\&space;y&space;\&space;\epsilon&space;\&space;Y\}" title="\Omega := \{\arg\max_{x_i\epsilon X^l_y} M(x_i, X^l) | \ y \ \epsilon \ Y\}" /></a>;
 
