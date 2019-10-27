@@ -163,9 +163,8 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 Алгоритм STOLP служит для определения типов объектов обучающей выборки, по уровню достоверности.  
 
 Алгоритм STOLP заключается в том, чтобы исключить выбросы, и возможно пограничные объекты, найти по одному эталону в каждом классе, и добавлять эталоны, пока есть отрицательные отступы. 
-```
 
-Вход:
+**Вход:**
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=X_l" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_l" title="X_l" /></a> — обучающая выборка;
 
@@ -173,7 +172,7 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l_0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_0" title="l_0" /></a> — допустимая доля ошибок;
 
-Выход:
+**Выход:**
 
 Множество опорных объектов <a href="https://www.codecogs.com/eqnedit.php?latex=\Omega&space;\subseteq&space;X^l;" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega&space;\subseteq&space;X^l;" title="\Omega \subseteq X^l;" /></a>
 
@@ -200,7 +199,7 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 9: Присоеденить к<a href="https://www.codecogs.com/eqnedit.php?latex=\Omega" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega" title="\Omega" /></a> объект с наименьшим отступом:
   
 <a href="https://www.codecogs.com/eqnedit.php?latex=x_i&space;:=&space;\arg&space;\min_{x\epsilon&space;E}&space;M(x,\Omega);&space;\&space;\Omega&space;:=\Omega\&space;\cup&space;\&space;\{x_i\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_i&space;:=&space;\arg&space;\min_{x\epsilon&space;E}&space;M(x,\Omega);&space;\&space;\Omega&space;:=\Omega\&space;\cup&space;\&space;\{x_i\}" title="x_i := \arg \min_{x\epsilon E} M(x,\Omega); \ \Omega :=\Omega\ \cup \ \{x_i\}" /></a>
-```
+
 
 ## Преимущества отбора эталонов
 -сокращается число хранимых объектов;
