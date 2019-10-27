@@ -192,6 +192,12 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=E&space;:=&space;\{x_i&space;\epsilon&space;X^l&space;\&space;\backslash&space;\Omega&space;:&space;M(x_i,&space;\Omega&space;<&space;0)&space;\};" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E&space;:=&space;\{x_i&space;\epsilon&space;X^l&space;\&space;\backslash&space;\Omega&space;:&space;M(x_i,&space;\Omega&space;<&space;0)&space;\};" title="E := \{x_i \epsilon X^l \ \backslash \Omega : M(x_i, \Omega < 0) \};" /></a>
 
+7: если <a href="https://www.codecogs.com/eqnedit.php?latex=|E|&space;<&space;l_0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?|E|&space;<&space;l_0" title="|E| < l_0" /></a> то
+
+8: выход;
+
+9: Присоеденить к <a href="https://www.codecogs.com/eqnedit.php?latex=\Omega" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega" title="\Omega" />
+
 ## Преимущества отбора эталонов
 -сокращается число хранимых объектов;
 
