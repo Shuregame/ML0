@@ -131,13 +131,19 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 Для наглядности покажем два случая парзеновского окна:
 
-1)**С переменной шириной**
+1)**С постоянной шириной**
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=a(u;X^l,h)&space;=&space;\arg&space;\max_{y&space;\epsilon&space;Y}&space;\sum_i:&space;y_n^{(i)}&space;=&space;K(\frac{\rho&space;(u,&space;x_n^{(i)})}{h})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;X^l,h)&space;=&space;\arg&space;\max_{y&space;\epsilon&space;Y}&space;\sum_i:&space;y_n^{(i)}&space;=&space;K(\frac{\rho&space;(u,&space;x_n^{(i)})}{h})" title="a(u;X^l,h) = \arg \max_{y \epsilon Y} \sum_i: y_n^{(i)} = K(\frac{\rho (u, x_n^{(i)})}{h})" /></a>
 
 <a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Parsen_h.png" ></a>
 
 Сразу видно, что в случае с классификацией красной точки плотность распределения большая, а в случае с синим и вовсе не попала ни одна точка в окно ширины h.
+
+2)**С переменной шириной**
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=a(u;X^l,h)&space;=&space;\arg&space;\max_{y&space;\epsilon&space;Y}&space;\sum_i:&space;y_n^{(i)}&space;=&space;K(\frac{\rho&space;(u,&space;X_u^{(i)})}{&space;\rho(u,X_u^{k&plus;1})})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;X^l,h)&space;=&space;\arg&space;\max_{y&space;\epsilon&space;Y}&space;\sum_i:&space;y_n^{(i)}&space;=&space;K(\frac{\rho&space;(u,&space;X_u^{(i)})}{&space;\rho(u,X_u^{k&plus;1})})" title="a(u;X^l,h) = \arg \max_{y \epsilon Y} \sum_i: y_n^{(i)} = K(\frac{\rho (u, X_u^{(i)})}{ \rho(u,X_u^{k+1})})" /></a>
+
+
 ## Метод потенциальных функций
 
 Так как функция расстояния - функция симметричная, можно рассматривать парзеновское окно с точки зрения объектов обучающей выборки.
