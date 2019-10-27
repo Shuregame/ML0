@@ -143,6 +143,7 @@ points(z[1], z[2], pch = 22, bg = colors[class], asp = 1)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=a(u;X^l,h)&space;=&space;\arg&space;\max_{y&space;\epsilon&space;Y}&space;\sum_i:&space;y_n^{(i)}&space;=&space;K(\frac{\rho&space;(u,&space;X_u^{(i)})}{&space;\rho(u,X_u^{k&plus;1})})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(u;X^l,h)&space;=&space;\arg&space;\max_{y&space;\epsilon&space;Y}&space;\sum_i:&space;y_n^{(i)}&space;=&space;K(\frac{\rho&space;(u,&space;X_u^{(i)})}{&space;\rho(u,X_u^{k&plus;1})})" title="a(u;X^l,h) = \arg \max_{y \epsilon Y} \sum_i: y_n^{(i)} = K(\frac{\rho (u, X_u^{(i)})}{ \rho(u,X_u^{k+1})})" /></a>
 
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Parsen_per_h.png" ></a>
 
 ## Метод потенциальных функций
 
