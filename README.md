@@ -250,3 +250,7 @@ kwNN <- function(xl, z, k,q)
 -необходимость задавать параметр <a href="https://www.codecogs.com/eqnedit.php?latex=\delta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta" title="\delta" /></a> ;
 
 -относительно низкая эффективность 
+
+## Байессовские методы классификации 
+
+
