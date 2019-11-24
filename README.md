@@ -269,10 +269,13 @@ kwNN <- function(xl, z, k,q)
 
 ## Функционал среднего риска
 
-a : X → Y разбивает X на непересекающиеся области:
+Рассмотрим произвольный алгоритм a : X → Y, который разбивает множество X на непересекающиеся области:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" title="\large A_y = \{x \epsilon X | a(x) = y\}, y \epsilon Y" /></a>
 
+Вероятность появления объекта класса 'y' и алгоритм 'u' отнесет его к классу 's', равна 
+
+# Наивный байесовский классификатор
 
 
 
