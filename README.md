@@ -251,6 +251,21 @@ kwNN <- function(xl, z, k,q)
 
 -относительно низкая эффективность 
 
-## Байессовские методы классификации 
+# Байессовские методы классификации 
 
+Пусть X - множество объектов, Y - множество ответов. Тогда X*Y - вероятностное пространство с плотностью распределения:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(x,y)&space;=&space;P(y)p(x|y)=P(y|x)p(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(x,y)&space;=&space;P(y)p(x|y)=P(y|x)p(x)" title="p(x,y) = P(y)p(x|y)=P(y|x)p(x)" /></a>
+
+Найти:
+классификатор a : X → Y с минимальной вероятностью ошибки.
+
+Предположим совместная плотность известная.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(x,&space;y)&space;=&space;p(x)&space;P(y|x)&space;=&space;P(y)p(x|y)." target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(x,&space;y)&space;=&space;p(x)&space;P(y|x)&space;=&space;P(y)p(x|y)." title="p(x, y) = p(x) P(y|x) = P(y)p(x|y)." /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=P(y)&space;\equiv&space;Py" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(y)&space;\equiv&space;Py" title="P(y) \equiv Py" /></a> — априорная вероятность класса y;
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(x|y)&space;\equiv&space;py&space;(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(x|y)&space;\equiv&space;py&space;(x)" title="p(x|y) \equiv py (x)" /></a> — функция правдоподобия класса y;
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=P(y|x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(y|x)" title="P(y|x)" /></a> — апостериорная вероятность класса y;
 
