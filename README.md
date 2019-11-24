@@ -259,7 +259,8 @@ kwNN <- function(xl, z, k,q)
 классификатор a : X → Y с минимальной вероятностью ошибки.
 
 Предположим совместная плотность известная.
-<a href="https://www.codecogs.com/eqnedit.php?latex=p(x,y)&space;=&space;P(y)p(x|y)=P(y|x)p(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(x,y)&space;=&space;P(y)p(x|y)=P(y|x)p(x)" title="p(x,y) = P(y)p(x|y)=P(y|x)p(x)" /></a>
+
+## <a href="https://www.codecogs.com/eqnedit.php?latex=p(x,y)&space;=&space;P(y)p(x|y)=P(y|x)p(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(x,y)&space;=&space;P(y)p(x|y)=P(y|x)p(x)" title="p(x,y) = P(y)p(x|y)=P(y|x)p(x)" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P(y)&space;\equiv&space;Py" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(y)&space;\equiv&space;Py" title="P(y) \equiv Py" /></a> — априорная вероятность класса y;
 
