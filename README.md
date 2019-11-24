@@ -271,6 +271,8 @@ kwNN <- function(xl, z, k,q)
 
 a : X → Y разбивает X на непересекающиеся области:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" title="\large A_y = \{x \epsilon X | a(x) = y\}, y \epsilon Y" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" title="\large A_y = \{x \epsilon X | a(x) = y\}, y \epsilon Y" /></a>
+
+
 
 
