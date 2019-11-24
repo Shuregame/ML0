@@ -253,12 +253,7 @@ kwNN <- function(xl, z, k,q)
 
 # Байессовские методы классификации 
 
-Пусть X - множество объектов, Y - множество ответов. Тогда X*Y - вероятностное пространство с плотностью распределения:
-
-Найти:
-классификатор a : X → Y с минимальной вероятностью ошибки.
-
-Предположим совместная плотность известная.
+Пусть X - множество объектов, Y - множество ответов. Тогда XxY - вероятностное пространство с плотностью распределения:
 
 ## <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;p(x,y)&space;=&space;P(y)p(x|y)=P(y|x)p(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;p(x,y)&space;=&space;P(y)p(x|y)=P(y|x)p(x)" title="\large p(x,y) = P(y)p(x|y)=P(y|x)p(x)" /></a>
 
@@ -267,4 +262,15 @@ kwNN <- function(xl, z, k,q)
 <a href="https://www.codecogs.com/eqnedit.php?latex=p(x|y)&space;\equiv&space;py&space;(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(x|y)&space;\equiv&space;py&space;(x)" title="p(x|y) \equiv py (x)" /></a> — функция правдоподобия класса y;
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P(y|x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(y|x)" title="P(y|x)" /></a> — апостериорная вероятность класса y;
+
+Нужно найти <a href="https://www.codecogs.com/eqnedit.php?latex=X^l&space;=&space;(x_i,y_i)^l_{i=1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X^l&space;=&space;(x_i,y_i)^l_{i=1}" title="X^l = (x_i,y_i)^l_{i=1}" /></a> классификатор a : X → Y с минимальной вероятностью ошибки.
+
+Предположим совместная плотность известная.
+
+## Функционал среднего риска
+
+a : X → Y разбивает X на непересекающиеся области:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" title="\large A_y = \{x \epsilon X | a(x) = y\}, y \epsilon Y" /></a>
+
 
