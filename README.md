@@ -287,3 +287,8 @@ kwNN <- function(xl, z, k,q)
 
 Если предположить, что все признаки являются независимыми случайныйми величинами, то это дает нам возможность представить функции правдоподобия в виде: <a href="https://www.codecogs.com/eqnedit.php?latex=p_y(x)=p_{y1}(\xi_1)...p_{yn},&space;y&space;\epsilon&space;Y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_y(x)=p_{y1}(\xi_1)...p_{yn},&space;y&space;\epsilon&space;Y" title="p_y(x)=p_{y1}(\xi_1)...p_{yn}, y \epsilon Y" /></a>
 
+Как оказалось оценивать n-одномерных плотностей проще, чем одну n-мерную.
+
+Получим наивный байесовский классификатор путем подставления эмпирических плотностей в оптимальных классиикатор:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=a(x)&space;=&space;\arg&space;\max_{y\epsilon&space;Y}&space;(\ln&space;\lambda_y\widehat{P}_y&plus;\sum&space;^n_{j=1}\ln&space;\widehat{p}_{yj}(\xi_j))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a(x)&space;=&space;\arg&space;\max_{y\epsilon&space;Y}&space;(\ln&space;\lambda_y\widehat{P}_y&plus;\sum&space;^n_{j=1}\ln&space;\widehat{p}_{yj}(\xi_j))" title="a(x) = \arg \max_{y\epsilon Y} (\ln \lambda_y\widehat{P}_y+\sum ^n_{j=1}\ln \widehat{p}_{yj}(\xi_j))" /></a>
