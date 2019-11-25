@@ -281,6 +281,9 @@ kwNN <- function(xl, z, k,q)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;R(a)=\sum&space;_{y\epsilon&space;Y}\sum&space;_{s\epsilon&space;Y}\lambda&space;_{ys}P_yP(A_s|y)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;R(a)=\sum&space;_{y\epsilon&space;Y}\sum&space;_{s\epsilon&space;Y}\lambda&space;_{ys}P_yP(A_s|y)" title="\large R(a)=\sum _{y\epsilon Y}\sum _{s\epsilon Y}\lambda _{ys}P_yP(A_s|y)" /></a>
 
+## Наивный байесовский классификатор
 
+Будем полагать, что каждому объекту x из X будет соответсвовать множество числовых признаков <a href="https://www.codecogs.com/eqnedit.php?latex=f_i:&space;X&space;\rightarrow&space;\mathbb{R},&space;j=1,...,n." target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_i:&space;X&space;\rightarrow&space;\mathbb{R},&space;j=1,...,n." title="f_i: X \rightarrow \mathbb{R}, j=1,...,n." /></a>. <a href="https://www.codecogs.com/eqnedit.php?latex=x=(\xi_1,...,\xi_n&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x=(\xi_1,...,\xi_n&space;)" title="x=(\xi_1,...,\xi_n )" /></a> - произвольный элемент пространства объектов X.
 
+Если предположить, что все признаки являются независимыми случайныйми величинами, то это дает нам возможность представить функции правдоподобия в виде: <a href="https://www.codecogs.com/eqnedit.php?latex=p_y(x)=p_{y1}(\xi_1)...p_{yn},&space;y&space;\epsilon&space;Y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_y(x)=p_{y1}(\xi_1)...p_{yn},&space;y&space;\epsilon&space;Y" title="p_y(x)=p_{y1}(\xi_1)...p_{yn}, y \epsilon Y" /></a>
 
