@@ -275,7 +275,7 @@ kwNN <- function(xl, z, k,q)
 
 Зная функцию правдоподобия можно найти вероятность событий вида x, принадлежащей множеству при условии:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;P(\Omega|y)=\int^{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;P(\Omega|y)=\int^{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" title="\large P(\Omega|y)=\int^{\Omega} p_y(x)dx, \Omega \subset X" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;P(\Omega|y)=\int_{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;P(\Omega|y)=\int_{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" title="\large P(\Omega|y)=\int_{\Omega} p_y(x)dx, \Omega \subset X" /></a>
 
 Функционалом среднего риска называется ожидаемая величина потери при классификации объектов алгоритмом a:
 
