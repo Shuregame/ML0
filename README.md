@@ -273,7 +273,7 @@ kwNN <- function(xl, z, k,q)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" title="\large A_y = \{x \epsilon X | a(x) = y\}, y \epsilon Y" /></a>
 
-Зная функцию правдоподобия можно найти вероятность событий вида x, принадлежащей множеству <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;P(\Omega|y)=\int_{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;P(\Omega|y)=\int_{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" title="\large P(\Omega|y)=\int_{\Omega} p_y(x)dx, \Omega \subset X" /></a> при условии:
+Зная функцию правдоподобия можно найти вероятность событий вида x, принадлежащей множеству при условии:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;P(\Omega|y)=\int^{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;P(\Omega|y)=\int^{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" title="\large P(\Omega|y)=\int^{\Omega} p_y(x)dx, \Omega \subset X" /></a>
 
