@@ -263,7 +263,7 @@ kwNN <- function(xl, z, k,q)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P(y|x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(y|x)" title="P(y|x)" /></a> — апостериорная вероятность класса y;
 
-Нужно найти <a href="https://www.codecogs.com/eqnedit.php?latex=X^l&space;=&space;(x_i,y_i)^l_{i=1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X^l&space;=&space;(x_i,y_i)^l_{i=1}" title="X^l = (x_i,y_i)^l_{i=1}" /></a> классификатор a : X → Y с минимальной вероятностью ошибки.
+Нужно найти классификатор a : X → Y с минимальной вероятностью ошибки.
 
 Предположим совместная плотность известная.
 
