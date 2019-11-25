@@ -273,6 +273,13 @@ kwNN <- function(xl, z, k,q)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;A_y&space;=&space;\{x&space;\epsilon&space;X&space;|&space;a(x)&space;=&space;y\},&space;y&space;\epsilon&space;Y" title="\large A_y = \{x \epsilon X | a(x) = y\}, y \epsilon Y" /></a>
 
+Зная функцию правдоподобия можно найти вероятность событий вида x, принадлежащей множеству <a href="https://www.codecogs.com/eqnedit.php?latex=\Omega" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Omega" title="\Omega" /></a> при условии:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;P(\Omega|y)=\int^{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;P(\Omega|y)=\int^{\Omega}&space;p_y(x)dx,&space;\Omega&space;\subset&space;X" title="\large P(\Omega|y)=\int^{\Omega} p_y(x)dx, \Omega \subset X" /></a>
+
+Функционалом среднего риска называется ожидаемая величина потери при классификации объектов алгоритмом a:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;R(a)=\sum&space;_{y\epsilon&space;Y}\sum&space;_{s\epsilon&space;Y}\lambda&space;_{ys}P_yP(A_s|y)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;R(a)=\sum&space;_{y\epsilon&space;Y}\sum&space;_{s\epsilon&space;Y}\lambda&space;_{ys}P_yP(A_s|y)" title="\large R(a)=\sum _{y\epsilon Y}\sum _{s\epsilon Y}\lambda _{ys}P_yP(A_s|y)" /></a>
 
 
 
