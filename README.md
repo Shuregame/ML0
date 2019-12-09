@@ -320,4 +320,5 @@ kwNN <- function(xl, z, k,q)
 
 <a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Neotric_param.png" height="35" width="250" ></a>
 
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/kuso4_post.jpg" height="90" width="600" ></a>
 
