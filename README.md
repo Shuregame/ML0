@@ -322,7 +322,7 @@ kwNN <- function(xl, z, k,q)
 
 Посмотрим на кусочно-постоянную функцию:
 
-<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/kuso4_post.jpg" height="90" width="600" ></a>
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/kuso4_post.jpg" height="85" width="700" ></a>
 
 Из-за того, что функция кусочно-постоянная, появяються широкие зоны неуверенности, в которых максимум достигается одновременно для нескольких классов y є Y. 
 
