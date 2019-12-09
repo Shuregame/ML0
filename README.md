@@ -307,12 +307,12 @@ kwNN <- function(xl, z, k,q)
 	
 Методы непараметрчиеской классификации основаны на локальной оценке распределения классов Py(x) в окрестности классифицируемого объекта x є X.
 
-<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Neparam_class.png" height="120" width="80" ></a>
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Neparam_class.png" height="120" width="300" ></a>
 
 
 ## Одномерный непрерывный случай
 
 Возьмем X=R. Согласно определению плотности:
 
-<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/odnomerniy_sluchai.png" height="120" width="80" ></a>
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/odnomerniy_sluchai.png" height="120" width="300" ></a>
 
