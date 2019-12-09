@@ -315,6 +315,6 @@ kwNN <- function(xl, z, k,q)
 Возьмем X=R. Согласно определению плотности:
 
 <a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/odnomerniy_sluchai.png" height="80" width="300" ></a>, где P[a,b] - вероятностная мера отрезка [a,b]. Тогда эпмперическая оценка плотности может быть определеная как доля точек выборки, котороая лежит внутри отрезка [x-h][x+h], h- ширина окна:
-<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Neotric_param.png" height="80" width="150" ></a>
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Neotric_param.png" height="40" width="150" ></a>
 
 
