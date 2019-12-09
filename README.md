@@ -311,5 +311,7 @@ kwNN <- function(xl, z, k,q)
 
 ## Одномерный непрерывный случай
 
-Возьмем X=R  ![Image alt](https://github.com/Shuregame/ML0/blob/master/odnomerniy_sluchai.png)
+Возьмем X=R. Согласно определению плотности:
+
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/odnomerniy_sluchai.png" height="500" width="760" ></a>
 
