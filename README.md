@@ -320,5 +320,12 @@ kwNN <- function(xl, z, k,q)
 
 <a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Neotric_param.png" height="35" width="250" ></a>
 
+Посмотрим на кусочно-постоянную функцию:
+
 <a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/kuso4_post.jpg" height="90" width="600" ></a>
+
+Из-за того, что функция кусочно-постоянная, появяються широкие зоны неуверенности, в которых максимум достигается одновременно для нескольких классов y є Y. 
+
+Эту проблему можно решить, используя локальную оценку Парзена-Розенблатта.
+
 
