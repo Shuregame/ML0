@@ -318,11 +318,11 @@ kwNN <- function(xl, z, k,q)
 
 где P[a,b] - вероятностная мера отрезка [a,b]. Тогда эпмперическая оценка плотности может быть определеная как доля точек выборки, котороая лежит внутри отрезка [x-h][x+h], h- ширина окна:
 
-<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Neotric_param.png" height="35" width="250" ></a>
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Neotric_param.png" height="30" width="300" ></a>
 
 Посмотрим на кусочно-постоянную функцию:
 
-<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/kuso4_post.jpg" height="75" width="800" ></a>
+<a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/kuso4_post.jpg" height="80" width="700" ></a>
 
 Из-за того, что функция кусочно-постоянная, появяються широкие зоны неуверенности, в которых максимум достигается одновременно для нескольких классов y є Y. 
 
