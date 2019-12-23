@@ -266,7 +266,7 @@ return(pots)
 }
 
 ```
-![Image alt](https://github.com/Shuregame/ML0/blob/master/potenc_func.png)
+![Image alt](https://github.com/Shuregame/ML0/blob/master/pot_func.png)
 
 ## Отступ
 
