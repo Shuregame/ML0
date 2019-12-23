@@ -229,6 +229,45 @@ gaus <- function(r,h){
 
 <a href="url"><img src="https://github.com/Shuregame/ML0/blob/master/Potencial.jpg" height="500" width="760" ></a>
 
+Реализация:
+
+```R
+potentials <- function(xl,class,n,h,errors){
+e <- 100
+pots <- rep(0,n)
+
+   while(e>error){
+
+      while(TRUE){
+
+         z <- sample(1:n,1)
+         x <- xl[z,1:2]
+         point <- pot_func(pots,xl,x,h)
+
+         if (colors[point] != colors[class[z]]) {
+            pots[z] <- pots[z] + 1
+            break
+         }
+      }
+
+      e <- 0
+
+      for (i in 1:n) {
+          x <- xl[i,1:2]
+          points <- xl[-i,1:3]
+              if (colors[pot_func(pots,points,x, h)]!= colors[class[i]]){
+                 e <- e + 1
+              }
+      }
+   }
+
+return(pots)
+
+}
+
+```
+![Image alt](https://github.com/Shuregame/ML0/blob/master/potenc_func.png)
+
 ## Отступ
 
 Случается так, что обучающая выборка избыточна. К примеру у нас есть 1000 объектов, но нам будет достаточно и 50 для построения алгоритма. Вопрос в том какие 50 нам выбрать. Для этого вводим пониятие отступа, которое подразделяет объекты выборки по уровню точности оценки классифицируемого объекта. Для этого введем формулу отступа:
