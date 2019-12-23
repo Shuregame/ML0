@@ -174,6 +174,7 @@ kwNN <- function(xl, z, k,q)
 ![Image alt](https://github.com/Shuregame/ML0/blob/master/Yadra.png)
 
 Возьмем для рассмотрения несколько примеров ядер:
+
 1)Ядро Епанечникова
 
 ![Image alt](https://github.com/Shuregame/ML0/blob/master/epane4.png)
@@ -183,6 +184,17 @@ kwNN <- function(xl, z, k,q)
 
 Реализация функции:
 
+```R
+epan <- function(r,h){
+  if(abs(r/h) <= 1){
+      return (3/4*(1-(r/h)^2))
+    } 
+   else {
+      return(0)
+  }
+}
+
+```
 
 2)Ядро Гаусса
 
@@ -195,6 +207,18 @@ kwNN <- function(xl, z, k,q)
 Для Гауссовского ядра можем построить полную карту классификации,так как Гауссовское ядро является финитным.
 
 Реализация функции:
+
+```R
+gaus <- function(r,h){
+ if(abs(r/h) <= 1){
+    return ( (2*pi)^(-1/2) * exp(-1/2 * (r/h)^2 ) )
+  } 
+  else {
+    return(0)
+  }
+}
+
+```
 
 ## Метод потенциальных функций
 
