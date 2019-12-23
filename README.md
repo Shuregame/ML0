@@ -171,7 +171,8 @@ kwNN <- function(xl, z, k,q)
 
 Рассмотри основные ядра:
 
-![Image alt](https://github.com/Shuregame/ML0/blob/master/Yadra.jpg)
+![Image alt](https://github.com/Shuregame/ML0/blob/master/Yadra.png)
+
 
 ## Метод потенциальных функций
 
