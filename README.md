@@ -102,6 +102,8 @@ class <- kNN(xl, z, k=6)
 points(z[1], z[2], pch = 22, bg = colors[class], asp = 1) 
 ```
 
+![Image alt](https://github.com/Shuregame/ML0/blob/master/Rplot.png)
+
 ## KWNN
 <a href="https://www.codecogs.com/eqnedit.php?latex=w(i,u)=[i\leqslant&space;k,&space;w(i)];&space;\par&space;U(u;X^l,k)&space;=&space;arg&space;max&space;\sum\limits^k_{i=1}&space;[y_n^{(i)}=y]w(i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w(i,u)=[i\leqslant&space;k,&space;w(i)];&space;\par&space;U(u;X^l,k)&space;=&space;arg&space;max&space;\sum\limits^k_{i=1}&space;[y_n^{(i)}=y]w(i)" title="w(i,u)=[i\leqslant k, w(i)]; \par U(u;X^l,k) = arg max \sum\limits^k_{i=1} [y_n^{(i)}=y]w(i)" /></a>
 
