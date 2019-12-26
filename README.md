@@ -486,3 +486,34 @@ line <- function(m,A)
 Если же признаки корелированы, то матрица не диагональная и линии уровня имеют форму элипсоидов, оси которых повернуты относительно исходной системы координат.
 
 ![Image alt](https://github.com/Shuregame/ML0/blob/master/3.png)
+
+
+# Линейные алгоритмы классификации
+
+- [Адаптивны линейный элемент](#Адаптивны-линейный-элемент)
+- [Персептрон Розенблатта](#Персептрон-Розенблатта)
+- [Логистическая регрессия](#Логистическая-регрессия)
+---
+
+## Линейные алгоритмы классификации
+
+Линейным классификатором называется алгоритм классификации вида:
+![raspr](https://raw.githubusercontent.com/TIR13/ML0/master/line/img/klass.gif), где 
+![raspr](https://raw.githubusercontent.com/TIR13/ML0/master/line/img/wj.gif) — вес j-го признака,  ![raspr](https://raw.githubusercontent.com/TIR13/ML0/master/line/img/w0.gif)  — порог принятия решения, ![raspr](https://raw.githubusercontent.com/TIR13/ML0/master/line/img/w.gif)  — вектор весов, ![raspr](https://raw.githubusercontent.com/TIR13/ML0/master/line/img/scall.gif)  — скалярное произведение признакового описания объекта на вектор весов.
+
+Величина 
+![raspr](https://raw.githubusercontent.com/TIR13/ML0/master/line/img/margin.gif) называется отступом объекта x. Если отступ отрицателен, то алгоритм допускает ошибку на выбранном элементе.
+
+Минимизацию суммарных потерь можно рассматривать как приближeнный метод минимизации эмпирического риска — числа ошибок на обучающей выборке:
+![raspr](https://raw.githubusercontent.com/TIR13/ML0/master/line/img/Q.png)
+
+## Адаптивны линейный элемент
+
+Адаптивны линейный элемент (ADALINE) - линейный алгоритм классификации, 
+ в котором используется квадратичная функция потерь: ![raspr](https://raw.githubusercontent.com/TIR13/ML0/master/line/img/ada_loss.png), 
+обновление весов происходит по формуле: ![raspr](https://raw.githubusercontent.com/TIR13/ML0/master/line/img/ada_upd.png)
+
+Результат работы алгоритма при помощи ADALINE
+
+![raspr](https://raw.githubusercontent.com/Shuregame/ML0/master/sheva.png)
+
