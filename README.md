@@ -437,4 +437,9 @@ return(pots)
 
 Эту проблему можно решить, используя локальную оценку Парзена-Розенблатта.
 
+## Линии уровня нормального распределения
+
+Вероятностное распределение <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;N(x,\mu,\Sigma)&space;=&space;\frac{1}{(2\pi)^n\left&space;|&space;\Sigma&space;\right&space;|}exp(-\frac{1}{2}(x-\mu)^T&space;\Sigma^{-1}(x-\mu))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;N(x,\mu,\Sigma)&space;=&space;\frac{1}{(2\pi)^n\left&space;|&space;\Sigma&space;\right&space;|}exp(-\frac{1}{2}(x-\mu)^T&space;\Sigma^{-1}(x-\mu))" title="N(x,\mu,\Sigma) = \frac{1}{(2\pi)^n\left | \Sigma \right |}exp(-\frac{1}{2}(x-\mu)^T \Sigma^{-1}(x-\mu))" /></a> есть n-мерное нормальное распределение с математическим ожиданием <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;\in&space;R^n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;\in&space;R^n" title="\mu \in R^n" /></a>
+
+и ковариоционной матрицей [\Sigma \in R^{n*n}] (матрица симетрична, невырожденная, положительно определенная)
 
