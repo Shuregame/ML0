@@ -441,3 +441,40 @@ return(pots)
 
 Вероятностное распределение <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;N(x,\mu,\Sigma)&space;=&space;\frac{1}{(2\pi)^n\left&space;|&space;\Sigma&space;\right&space;|}exp(-\frac{1}{2}(x-\mu)^T&space;\Sigma^{-1}(x-\mu))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;N(x,\mu,\Sigma)&space;=&space;\frac{1}{(2\pi)^n\left&space;|&space;\Sigma&space;\right&space;|}exp(-\frac{1}{2}(x-\mu)^T&space;\Sigma^{-1}(x-\mu))" title="N(x,\mu,\Sigma) = \frac{1}{(2\pi)^n\left | \Sigma \right |}exp(-\frac{1}{2}(x-\mu)^T \Sigma^{-1}(x-\mu))" /></a> есть n-мерное нормальное распределение с математическим ожиданием <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;\in&space;R^n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;\in&space;R^n" title="\mu \in R^n" /></a> и ковариоционной матрицей <a href="https://www.codecogs.com/eqnedit.php?latex=\Sigma&space;\in&space;R^{n*n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Sigma&space;\in&space;R^{n*n}" title="\Sigma \in R^{n*n}" /></a>(матрица положительно определенна, симетричная, невырожденна, положительно определена)
 
+Реализация:
+
+```R
+line <- function(m,A)
+{
+	determ<-det(A)
+	
+	a <- A[2,2]/determ
+	b <- -A[2,1]/determ
+	c <- -A[1,2]/determ
+	d <- A[1,1]/determ
+	
+	x0 <- m[1]
+	y0 <- m[2]
+  
+	x <- seq(-2.5, 2.5, 0.1)
+	y <- seq(-2.5, 2.5, 0.1)
+	
+	A <- d
+	B <- a
+	C <- -c-b
+	D <- -2*d*x0+y0*(c+b)
+	E <- -2*a*y0+x0*(c+b)
+	F <- d*x0^2+a*y0^2+x0*y0*(-c-b)
+	
+	func <- function(x, y) {
+    	1/(2*pi*sqrt(determ))*exp((-1/2)*(x^2*A + y^2*B + x*y*C + x*D + y*E + F))
+	}
+	
+	z <- outer(x, y, func)
+  
+	contour(x, y, z)
+}
+```
+Если признаки некорелированы, то линии уровня плотности распределения имеют форму элипсоидов.
+
+![Image alt](https://github.com/Shuregame/ML0/blob/master/2.png)
